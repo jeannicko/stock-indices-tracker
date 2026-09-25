@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consultation des indices boursiers</title>
+    <meta
+      name="description"
+      content="Application de consultation des indices boursiers avec tableau de bord et détails par indice."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Analyse du marché</p>
+          <h1>Indices boursiers</h1>
+        </div>
+        <button id="refreshButton" class="primary-btn" type="button">↻ Actualiser</button>
+      </header>
+
+      <main class="main-panel">
+        <section id="indexGrid" class="index-grid" aria-label="Indices boursiers"></section>
+
+        <aside id="detailPanel" class="detail-panel hidden" aria-live="polite"></aside>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
